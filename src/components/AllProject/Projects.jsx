@@ -53,6 +53,11 @@ function Projects() {
           return <Project item={item} key={item.id} />;
         })}
       </section>
+      <div className="text-center mt-10">
+        <button className="bg-[#9C4DF4] text-white rounded-xl  p-3 pl-10 pr-10 hover:bg-[#fff] duration-300 hover:text-black border-solid border-2 border-[#9C4DF4] ">
+          See More
+        </button>
+      </div>
     </div>
   );
 }
