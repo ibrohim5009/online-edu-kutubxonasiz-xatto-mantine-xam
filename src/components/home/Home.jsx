@@ -4,7 +4,7 @@ import HeroHeader from "./hero-header/HeroHeader";
 
 function Home() {
   return (
-    <div className="">
+    <div>
       <Navabar />
       <HeroHeader />
     </div>
