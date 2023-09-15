@@ -1,10 +1,11 @@
 import React from "react";
+import flex from "../../../img/Imageflex.png"
 
 function HeroHeader() {
   return (
     <div className="container mx-auto p-12">
-      <div className="">
-        <div className="">
+      <div className="flex justify-between">
+        <div className="mt-32">
           <div className="rounded-[10px] bg-[#FFF] w-[200px] h-12 text-center pt-2">
             <h1 className="text-[#FF6652]">Never Stop Learning</h1>
           </div>
@@ -16,12 +17,12 @@ function HeroHeader() {
             specialises in accredited and bespoke training courses. We crush the
             barriers togetting a degree.
           </p>
-          <div className="bg-[#FFFFFF] flex w-[460px] h-[50px]">
+          <div className="bg-[#FFFFFF] flex w-[435px] h-[50px] text-center rounded-[10px] mt-3">
             <select name="" id="" className="text-[#5D5A6F99]">
               <option value="">Kindergarten</option>
             </select>
             <input type="text" placeholder="Class/Course" className="text-[#5D5A6F99] outline-none" />
-              <button className="text-[#fff] bg-[#9C4DF4] border-none flex">
+              <button className="text-[#fff] bg-[#9C4DF4] border-none justify-end flex w-[130px] h-[40px] rounded-[10px] pt-2 pr-8 my-[5px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -38,7 +39,9 @@ function HeroHeader() {
             </button>
           </div>
         </div>
-        <div className=""></div>
+        <div className="">
+          <img src={flex} alt="" />
+        </div>
       </div>
     </div>
   );
