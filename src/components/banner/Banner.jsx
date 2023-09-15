@@ -32,7 +32,7 @@ function Banner() {
         </div>
         <div className="bg-[#FFFFFF] flex  justify-between w-[330px] mt-[-150px] h-[80px] rounded-[10px] text-center">
           <img src={icon} alt="" />
-          <h1 className="text-[20px] text-[#0A033C] mt-5 pr-20">Audio Classes</h1>
+          <h1 className="text-[20px] text-[#0A033C] mt-5 pr-20">Audio Classe</h1>
         </div>
       </div>
     </div>
