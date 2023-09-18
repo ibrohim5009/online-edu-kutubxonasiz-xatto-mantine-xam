@@ -21,12 +21,18 @@ function Navabar() {
               <option value=""> For Collage</option>
             </select>
           </Link>
-          <Link to="/courses" className="flex items-center">
-            <select name="" id="">
-              <option>Courses</option>
-              <option value="text">dq</option>
-            </select>
-          </Link>
+          <select name="" id="">
+            <option>
+              <Link to="/courses" className="flex items-center">
+                Courses
+              </Link>
+            </option>
+            <option>
+              <Link to="/" className="flex items-center">
+                Courses Details
+              </Link>
+            </option>
+          </select>
           <Link to="/" className="flex items-center">
             Cart (0){" "}
             <svg
