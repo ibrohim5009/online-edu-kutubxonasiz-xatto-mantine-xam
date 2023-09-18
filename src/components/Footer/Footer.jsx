@@ -33,7 +33,7 @@ function Footer() {
                                 Courses
                             </p>
                             <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-500">
-                                <a className="hover:opacity-75" href="/"> Classroom coursess </a>
+                                <a className="hover:opacity-75" href="/"> Classroom course</a>
                                 <a className="hover:opacity-75" href="/"> Virtual classroom courses</a>
                                 <a className="hover:opacity-75" href="/"> E-learning courses</a>
                                 <a className="hover:opacity-75" href="/"> Video Courses </a>
