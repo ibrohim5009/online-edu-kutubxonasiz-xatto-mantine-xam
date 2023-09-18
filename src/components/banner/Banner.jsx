@@ -18,7 +18,7 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-cent ">
         <img src={VIdeo} alt="" />
       </div>
       <div className="flex justify-around">

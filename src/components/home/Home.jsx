@@ -1,15 +1,21 @@
 import React from "react";
-import Navabar from "./navbar/Navabar";
-import HeroHeader from "./hero-header/HeroHeader";
+import AboutStudent from "../AboutStudent/AboutStudent";
+import Info from "../Information/Info";
 import Banner from "../banner/Banner";
+import Action from "././../AllProject/Action";
+import HeroHeader from "./hero-header/HeroHeader";
 
 function Home() {
   return (
-    <div>
-      <Navabar />
+  <>
+   
       <HeroHeader />
-      <Banner/>
-    </div>
+      <Banner />
+      <Action />
+      <Info />
+      <AboutStudent />
+  </>
+ 
   );
 }
 

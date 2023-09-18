@@ -1,32 +1,33 @@
 import React from "react";
-import Banner from "../../banner/Banner";
+import { Link } from "react-router-dom";
 
 function Navabar() {
   return (
     <div className="container mx-auto">
       <div className="">
         <nav className="flex justify-around text-[#0A033C] text-lg">
-          <a href="#">LOgo</a>
-          <a href="#">Shop</a>
-          <a href="#" className="flex items-center">
+          <Link to="/">LOgo</Link>
+          <Link to="/">Shop</Link>
+          <Link to="/" className="flex items-center">
             <select name="" id="">
               <option value="" className="">
                 For Kindergarten
               </option>
             </select>
-          </a>
+          </Link>
 
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <select name="" id="">
               <option value=""> For Collage</option>
             </select>
-          </a>
-          <a href="#" className="flex items-center">
+          </Link>
+          <Link to="/courses" className="flex items-center">
             <select name="" id="">
-              <option value="">Courses</option>
+              <option>Courses</option>
+              <option value="text">dq</option>
             </select>
-          </a>
-          <a href="#" className="flex items-center">
+          </Link>
+          <Link to="/" className="flex items-center">
             Cart (0){" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +41,8 @@ function Navabar() {
                 fill="#FF6652"
               />
             </svg>
-          </a>
-          <a href="#" className="flex items-center">
+          </Link>
+          <Link to="/" className="flex items-center">
             My Account
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +56,7 @@ function Navabar() {
                 fill="#9C4DF4"
               />
             </svg>
-          </a>
+          </Link>
         </nav>
       </div>
     </div>
