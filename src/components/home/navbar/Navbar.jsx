@@ -7,7 +7,7 @@ function Navabar() {
       <div className="">
         <nav className="flex justify-around text-[#0A033C] text-lg">
           <Link to="/">LOgo</Link>
-          <Link to="/">Shop</Link>
+          <Link to="/shop">Shop</Link>
           <Link to="/" className="flex items-center">
             <select name="" id="">
               <option value="" className="">
