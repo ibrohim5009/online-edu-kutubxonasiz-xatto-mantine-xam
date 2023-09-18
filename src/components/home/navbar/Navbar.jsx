@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../../assets/Logo.png"
 
 function Navabar() {
   return (
     <div className="container mx-auto">
       <div className="">
         <nav className="flex justify-around text-[#0A033C] text-lg">
-          <Link to="/">LOgo</Link>
+          <Link to="/">
+            <img src={Logo} alt="" />
+          </Link>
           <Link to="/shop">Shop</Link>
           <Link to="/" className="flex items-center">
             <select name="" id="">
