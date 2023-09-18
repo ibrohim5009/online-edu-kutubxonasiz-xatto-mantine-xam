@@ -4,10 +4,12 @@ import Twitter from "../../assets/Twitter.svg"
 import Facebook from "../../assets/facebook.svg"
 import Linkidein from "../../assets/Linkedin.svg"
 import instagram from "../../assets/8.png"
+import FooterHEader from './FooterHEader'
 
 function Footer() {
     return (
         <footer className="">
+            <FooterHEader/>
             <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
