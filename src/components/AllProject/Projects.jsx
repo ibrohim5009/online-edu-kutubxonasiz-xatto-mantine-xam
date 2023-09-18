@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-//import data
+// Import data
 import { projectsData, projectsNav } from "../../data";
-
 
 import Project from "./Project";
 
@@ -10,6 +9,7 @@ function Projects() {
   const [item, setItem] = useState({ name: "all" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
+  const [backgroundColor, setBackgroundColor] = useState("#FFFFFF"); // Default background color
 
   useEffect(() => {
     if (item.name === "all") {
@@ -20,37 +20,50 @@ function Projects() {
       });
       setProjects(newProjects);
     }
+
+    switch (item.name) {
+      case "all":
+        setBackgroundColor("#FFFFFF");
+        break;
+      case "category1":
+        setBackgroundColor("#FF0000");
+        break;
+      case "category2":
+        setBackgroundColor("#00FF00");
+        break;
+      default:
+        setBackgroundColor("#FFFFFF");
+    }
   }, [item]);
 
-  const hendleClick = (e, index) => {
+  const handleClick = (e, index) => {
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: backgroundColor }}>
       <nav className="mb-12 max-w-xl mx-auto container">
         <ul className="flex flex-col md:flex-row justify-evenly items-center ">
-          {projectsNav.map((item, index) => {
+          {projectsNav.map((navItem, index) => {
             return (
               <li
                 onClick={(e) => {
-                  hendleClick(e, index);
+                  handleClick(e, index);
                 }}
-                className={`${
-                  active === index ? "active" : ""
-                } cursor-pointer capitalize m-4`}
+                className={`${active === index ? "active" : ""
+                  } cursor-pointer capitalize m-4`}
                 key={index}
               >
-                {item.name}
+                <span>{navItem.name}</span>
               </li>
             );
           })}
         </ul>
       </nav>
       <section className="grid lg:grid-cols-4 gap-y-12 lg:gap-x-8 lg:gap-y-8 ">
-        {projects.map((item) => {
-          return <Project item={item} key={item.id} />;
+        {projects.map((project) => {
+          return <Project item={project} key={project.id} />;
         })}
       </section>
       <div className="text-center mt-10">

@@ -9,6 +9,7 @@ function AboutStudent() {
                     <img src={Image2} alt="" />
                 </div>
             </div>
+        
             <div>
                 <div>
                     <p className="text-[45px] font-bold text-[#0A033C] leading-normal">
