@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../../../assets/Logo.png"
+import { Link, useNavigate } from "react-router-dom";
+import Logo from "../../../assets/Logo.png";
 
 function Navabar() {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto">
       <div className="">
@@ -24,17 +25,12 @@ function Navabar() {
               <option value=""> For Collage</option>
             </select>
           </Link>
-          <select name="" id="">
-            <option>
-              <Link to="/courses" className="flex items-center">
-                Courses
-              </Link>
-            </option>
-            <option>
-              <Link to="/" className="flex items-center">
-                Courses Details
-              </Link>
-            </option>
+          <select name="" id="" onChange={(e) => navigate(e.target.value)}>
+            <option value={"/courses"}>Courses</option>
+            <option value="/courses-details">Courses Details</option>
+            <option value="/pricing">Pricing</option>
+            <option value="/become">Become An Instructor</option>
+            <option value="/our-mentors"> Our Mentors</option>
           </select>
           <Link to="/" className="flex items-center">
             Cart (0){" "}

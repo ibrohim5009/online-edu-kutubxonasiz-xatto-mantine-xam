@@ -22,7 +22,7 @@ function FooterHEader() {
           <span className='text-[#FFFFFFB2]'>20k+ students daily learn with Eduvi. Subscribe for new courses.</span>
           <div>
             <form className="m-4 flex">
-              <input className="rounded-l-lg p-4 w-[400px] border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="your@mail.com" />
+              <input className=" rounded-l-lg p-4 w-[400px] border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="your@mail.com" />
               <button className="rounded-r-lg bg-[#9C4DF4]  text-white font-bold p-4 w-[150px]  border-t border-b border-r">Subscribe</button>
             </form>
           </div>
