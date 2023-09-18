@@ -9,11 +9,13 @@ import Ellipse6 from "../../assets/Ellipse 170.png"
 function FooterHEader() {
   return (
     <div className='w-[95%] container mx-auto mt-[5pc]'>
-        <div className='w-[95%] h-[420px] bg-[#0A033C] rounded-3xl md:flex justify-between'>
-            <div>left</div>
-            <div>middle</div>
-            <div>right</div>
+      <div className='w-[95%] h-[420px] bg-[#0A033C] rounded-3xl md:flex justify-between'>
+        <div>
+          <img src={Ellipse1} alt="" />
         </div>
+        <div>middle</div>
+        <div>right</div>
+      </div>
     </div>
   )
 }
