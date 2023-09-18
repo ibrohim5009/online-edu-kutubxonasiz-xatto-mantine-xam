@@ -1,20 +1,25 @@
 import React from "react";
-import Action from "./components/AllProject/Action";
 import Home from "./components/home/Home";
-import Info from "./components/Information/Info";
-import AboutStudent from "./components/AboutStudent/AboutStudent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Courses from "./components/pages/courses/Courses";
+import Navabar from "./components/home/navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import FooterHEader from "./components/Footer/FooterHEader";
+import Shop from "./components/pages/shop/Shop";
 
 const App = () => {
   return (
-    <div className="container mx-auto">
-      <Home />
-      <Action/>
-      <Info/>
-      <AboutStudent/>
-      <FooterHEader/>
-      <Footer/>
+    <div className="container mx-auto bg-[#F7F5FA]">
+      <BrowserRouter>
+        <Navabar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses-details" element={<Courses />} />
+          <Route path="/shop" element={<Shop/>} />
+          
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };
