@@ -8,7 +8,6 @@ import HeroHeader from "./hero-header/HeroHeader";
 function Home() {
   return (
   <>
-   
       <HeroHeader />
       <Banner />
       <Action />
