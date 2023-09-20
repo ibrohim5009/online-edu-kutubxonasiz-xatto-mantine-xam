@@ -5,7 +5,7 @@ import Logo from "../../../assets/Logo.png";
 function Navabar() {
   const navigate = useNavigate();
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto w-[95%]">
       <div className="">
         <nav className="flex justify-around text-[#0A033C] text-lg">
           <Link to="/">

@@ -9,6 +9,7 @@ import CoursesDetails from "./components/pages/CoursesDetails/CoursesDetails";
 import Pricing from "./components/pages/pricing/Pricing";
 import Become from "./components/pages/become/Become";
 import OurMentors from "./components/pages/ourmentors/OurMentors";
+import OurMentiorsId from "./components/pages/ourmentors/OurMentiorsId";
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
           <Route path="/shop" element={<Shop />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/become" element={<Become />} />
-          <Route path="/our-mentors" element={<OurMentors />} />
+          <Route path="/our-mentors/" element={<OurMentors />} />
+          <Route path="/our-mentors/:id" element={<OurMentiorsId />} />
         </Routes>
         <Footer />
       </BrowserRouter>

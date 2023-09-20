@@ -18,8 +18,7 @@ function Info() {
             </p>
             <span className="text-[#5D5A6F] text-[16px] font-normal leading-8">
               High-definition video is video of higher resolution and quality{" "}
-              <br /> than standard-definition. While there is no standardized{" "}
-              <br /> meaning for high-definition, generally any video.
+              <br /> than standard-definition. While there is no standardized{" "} meaning for high-definition, generally any video.
             </span>
             <div>
               {" "}
@@ -37,4 +36,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default Info;  
