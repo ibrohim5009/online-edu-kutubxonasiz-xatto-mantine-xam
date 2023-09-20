@@ -10,7 +10,7 @@ import Image7 from "../../../img/Image7.png";
 import Image8 from "../../../img/IMage8.png";
 import Image9 from "../../../img/IMage9.png";
 
-export default CoursesData = [
+export const MakbookliBrat = [
   {
     id: 1,
     name: "The Three Musketeers",

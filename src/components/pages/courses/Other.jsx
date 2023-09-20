@@ -1,4 +1,5 @@
 import React from "react";
+import { MakbookliBrat } from "./MakbookliBrat";
 
 function Other() {
   return (
@@ -47,9 +48,24 @@ function Other() {
           </div>
         </div>
       </div>
-      <div className="">
+
+      <div className="mt-12">
         <div className="">
-          <div className=""></div>
+          <div className="grid grid-cols-2  justify-between gap-8">
+            {MakbookliBrat.map((item) => {
+              return (
+                <div key={item.id} className="">
+                  <div className="flex pl-10 gap-4">
+                    <img src={item.image} alt="" />
+                    <h1>{item.name}</h1>
+                    {item.icon}
+                    {item.narx}
+                    {item.shopCart}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
