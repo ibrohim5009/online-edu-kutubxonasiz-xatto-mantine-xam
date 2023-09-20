@@ -13,7 +13,7 @@ function Navabar() {
           </Link>
           <Link to="/shop">Shop</Link>
           <Link to="/" className="flex items-center">
-            <select name="" id="">
+            <select className="text-center bg-transparent flex"  name="" id="">
               <option value="" className="">
                 For Kindergarten
               </option>
@@ -21,11 +21,16 @@ function Navabar() {
           </Link>
 
           <Link to="/" className="flex items-center">
-            <select name="" id="">
+            <select className="text-center bg-transparent flex" name="" id="">
               <option value=""> For Collage</option>
             </select>
           </Link>
-          <select name="" id="" onChange={(e) => navigate(e.target.value)}>
+          <select
+            className="text-center bg-transparent flex"
+            name=""
+            id=""
+            onChange={(e) => navigate(e.target.value)}
+          >
             <option value={"/courses"}>Courses</option>
             <option value="/courses-details">Courses Details</option>
             <option value="/pricing">Pricing</option>

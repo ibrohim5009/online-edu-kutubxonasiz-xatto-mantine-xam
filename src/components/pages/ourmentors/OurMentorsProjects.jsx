@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 // Import data
 
-import { Mentors, MentosProjectsNav } from './../../../data';
-import OurMentorsProject from './OurMentorProjec';
+import { Mentors, MentosProjectsNav } from "./../../../data";
+import OurMentorsProject from "./OurMentorProjec";
 
 function OurMentorsProjects() {
     const [item, setItem] = useState({ name: "all" });
@@ -42,8 +42,8 @@ function OurMentorsProjects() {
     };
 
     return (
-        <div style={{ backgroundColor: backgroundColor }}>
-            <nav className="mb-12 max-w-xl mx-auto container">
+        <div className="bg-[#F7F5FA]">
+            <nav className="mb-12 mx-auto container">
                 <ul className="flex flex-col md:flex-row justify-evenly items-center ">
                     {MentosProjectsNav.map((navItem, index) => {
                         return (

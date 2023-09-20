@@ -7,14 +7,13 @@ import HeroHeader from "./hero-header/HeroHeader";
 
 function Home() {
   return (
-  <>
+    <div className="bg-[#F7F5FA]">
       <HeroHeader />
       <Banner />
       <Action />
       <Info />
       <AboutStudent />
-  </>
- 
+    </div>
   );
 }
 

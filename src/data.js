@@ -20,8 +20,7 @@ import mentor6 from "./assets/mentor6.png";
 import mentor7 from "./assets/mentor7.png";
 import mentor8 from "./assets/mentor8.png";
 import mentor9 from "./assets/mentor9.png";
-import star from "./assets/stat.svg";
-
+import star from "./assets/Vector.png"
 export const projectsData = [
   {
     id: "1",
