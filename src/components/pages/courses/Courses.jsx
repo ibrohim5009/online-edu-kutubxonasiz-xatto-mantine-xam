@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 // Import data
-import { projectsData, projectsNav } from "./CoursesData";
+import {
+  projectsData,
+  projectsNav,
+} from "../../../components/pages/courses/CoursesData";
 
-import Coursess from "./Coursess";
-import Other from "./Other";
+import Project from "./Coursess";
 
 function Courses() {
   const [item, setItem] = useState({ name: "all" });
@@ -23,16 +25,13 @@ function Courses() {
     }
 
     switch (item.name) {
-      case "All Courses":
+      case "all":
         setBackgroundColor("#FFFFFF");
         break;
       case "category1":
         setBackgroundColor("#FF0000");
         break;
       case "category2":
-        setBackgroundColor("#00FF00");
-        break;
-      case "category3":
         setBackgroundColor("#00FF00");
         break;
       default:
@@ -68,11 +67,9 @@ function Courses() {
       </nav>
       <section className="grid lg:grid-cols-4 gap-y-12 lg:gap-x-8 lg:gap-y-8 ">
         {projects.map((project) => {
-          return <Coursess item={project} key={project.id} />;
+          return <Project item={project} key={project.id} />;
         })}
       </section>
-      <br />
-      <Other />
     </div>
   );
 }
