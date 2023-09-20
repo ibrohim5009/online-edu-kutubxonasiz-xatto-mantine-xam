@@ -42,7 +42,7 @@ function Projects() {
   };
 
   return (
-    <div style={{ backgroundColor: backgroundColor }}>
+    <div className="bg-[#F7F5FA]">
       <nav className="mb-12 max-w-xl mx-auto container">
         <ul className="flex flex-col md:flex-row justify-evenly items-center ">
           {projectsNav.map((navItem, index) => {
