@@ -54,8 +54,8 @@ function Other() {
           <div className="grid grid-cols-2  justify-between gap-8">
             {MakbookliBrat.map((item) => {
               return (
-                <div key={item.id} className="">
-                  <div className="flex pl-10 gap-4">
+                <div key={item.id} className="pl-12 ">
+                  <div className="flex gap-4 bg-[#fff] rounded-lg w-[600px] items-center">
                     <img src={item.image} alt="" />
                     <h1>{item.name}</h1>
                     {item.icon}
