@@ -14,22 +14,6 @@ export const projectsData = [
         name: "Standard One",
         des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
         buttonInformation: "Class Details",
-        category: "All Courses",
-    },
-    {
-        id: "1",
-        image: Project1,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "All Courses",
-    },
-    {
-        id: "2",
-        image: Project2,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
         category: "Kindergarten",
     },
     {
@@ -49,36 +33,12 @@ export const projectsData = [
         category: "High School",
     },
     {
-        id: "3",
-        image: Project3,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "High School",
-    },
-    {
         id: "4",
         image: Project4,
         name: "Standard One",
         des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
         buttonInformation: "Class Details",
         category: "College",
-    },
-    {
-        id: "4",
-        image: Project4,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "College",
-    },
-    {
-        id: "5",
-        image: Project5,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "Computer",
     },
     {
         id: "5",
@@ -97,14 +57,6 @@ export const projectsData = [
         category: "Science",
     },
     {
-        id: "6",
-        image: Project6,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "Science",
-    },
-    {
         id: "7",
         image: Project7,
         name: "Standard One",
@@ -112,14 +64,7 @@ export const projectsData = [
         buttonInformation: "Class Details",
         category: "Engineering",
     },
-    {
-        id: "7",
-        image: Project7,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "Engineering",
-    },
+
     {
         id: "8",
         image: Project8,
@@ -128,21 +73,14 @@ export const projectsData = [
         buttonInformation: "Class Details",
         category: "More Courses",
     },
-    {
-        id: "8",
-        image: Project8,
-        name: "Standard One",
-        des: "Standard 1 is a foundation Standard that reflects 7 important concepts...",
-        buttonInformation: "Class Details",
-        category: "More Courses",
-    },
+
 
 ];
 
 // projects
 export const projectsNav = [
     {
-        name: "All Courses",
+        name: "all",
     },
     {
         name: "Kindergarten",

@@ -38,7 +38,7 @@ function Navabar() {
             <option value="/our-mentors"> Our Mentors</option>
           </select>
           <Link to="/" className="flex items-center">
-            Cart (0){" "}
+            Cart (0)
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"

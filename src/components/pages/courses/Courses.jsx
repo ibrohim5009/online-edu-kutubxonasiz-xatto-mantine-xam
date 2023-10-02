@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { projectsData, projectsNav } from "./CoursesData";
 
 import Coursess from "./Coursess";
+import OurMentorsProject from "../ourmentors/OurMentorProjec";
 import Other from "./Other";
 
 function Courses() {
@@ -23,7 +24,7 @@ function Courses() {
     }
 
     switch (item.name) {
-      case "All Courses":
+      case "all":
         setBackgroundColor("#FFFFFF");
         break;
       case "category1":
@@ -46,34 +47,35 @@ function Courses() {
   };
 
   return (
-    <div className="bg-[#F7F5FA]">
-      <nav className="mb-12 mx-auto container">
-        <ul className="flex flex-col md:flex-row justify-evenly items-center ">
-          {projectsNav.map((navItem, index) => {
-            return (
-              <li
-                onClick={(e) => {
-                  handleClick(e, index);
-                }}
-                className={`${
-                  active === index ? "active" : ""
-                } cursor-pointer capitalize m-4`}
-                key={index}
-              >
-                <span>{navItem.name}</span>
-              </li>
-            );
+    <>
+      <div className="bg-[#F7F5FA]">
+        <nav className="mb-12 mx-auto container">
+          <ul className="flex flex-col md:flex-row justify-evenly items-center ">
+            {projectsNav.map((navItem, index) => {
+              return (
+                <li
+                  onClick={(e) => {
+                    handleClick(e, index);
+                  }}
+                  className={`${
+                    active === index ? "active" : ""
+                  } cursor-pointer capitalize m-4`}
+                  key={index}
+                >
+                  <span>{navItem.name}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        <section className="grid lg:grid-cols-4 gap-y-12 lg:gap-x-8 lg:gap-y-8 ">
+          {projects.map((project) => {
+            return <Coursess item={project} key={project.id} />;
           })}
-        </ul>
-      </nav>
-      <section className="grid lg:grid-cols-4 gap-y-12 lg:gap-x-8 lg:gap-y-8 ">
-        {projects.map((project) => {
-          return <Coursess item={project} key={project.id} />;
-        })}
-      </section>
-      <br />
-      <Other />
-    </div>
+        </section>
+      </div>
+      <Other/>
+    </>
   );
 }
 
