@@ -10,7 +10,7 @@ function OurMentors() {
         <p className="absolute top-[100px] z-10 left-[250px] text-[#0A033C] text-5xl font-semibold leading-[50px]">Eduvi has the <br /> qualified mentor</p>
       </div>
     </div>
-    <OurMentorsACtion/>
+    <OurMentorsACtion />
   </div>
 }
 

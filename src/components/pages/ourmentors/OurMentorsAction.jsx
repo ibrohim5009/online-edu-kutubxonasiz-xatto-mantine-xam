@@ -8,7 +8,6 @@ function OurMentorsACtion() {
     >
       <div className="container mx-auto w-[95%]">
         <div className="flex flex-col items-center text-center">
-      
         </div>
         <OurMentorsProjects />
       </div>

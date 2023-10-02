@@ -4,13 +4,13 @@ import React, { useEffect, useState } from "react";
 
 import { Mentors, MentosProjectsNav } from "./../../../data";
 import OurMentorsProject from "./OurMentorProjec";
+import { Link, useParams } from "react-router-dom";
 
 function OurMentorsProjects() {
     const [item, setItem] = useState({ name: "all" });
     const [projects, setProjects] = useState([]);
     const [active, setActive] = useState(0);
-    const [backgroundColor, setBackgroundColor] = useState("#FFFFFF"); // Default background color
-
+    const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
     useEffect(() => {
         if (item.name === "all") {
             setProjects(Mentors);
@@ -41,6 +41,8 @@ function OurMentorsProjects() {
         setActive(index);
     };
 
+    const [expanded, setExpanded] = React.useState(false);
+    const { id } = useParams();
     return (
         <div className="bg-[#F7F5FA]">
             <nav className="mb-12 mx-auto container">
@@ -55,7 +57,7 @@ function OurMentorsProjects() {
                                     } cursor-pointer capitalize m-4`}
                                 key={index}
                             >
-                                <span>{navItem.name}</span>
+                                <button onClick={setBackgroundColor}>{navItem.name}</button>
                             </li>
                         );
                     })}
@@ -67,9 +69,11 @@ function OurMentorsProjects() {
                 })}
             </section>
             <div className="text-center mt-10">
-                <button className="bg-[#9C4DF4] text-white rounded-xl  p-3 pl-10 pr-10 hover:bg-[#fff] duration-300 hover:text-black border-solid border-2 border-[#9C4DF4] ">
-                    See More
-                </button>
+                <Link to={`/blog/${projects.id}`}>
+                    <button className="bg-[#9C4DF4] text-white rounded-xl  p-3 pl-10 pr-10 hover:bg-[#fff] duration-300 hover:text-black border-solid border-2 border-[#9C4DF4] ">
+                        See More
+                    </button>
+                </Link>
             </div>
         </div>
     );

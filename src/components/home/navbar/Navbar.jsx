@@ -13,7 +13,7 @@ function Navabar() {
           </Link>
           <Link to="/shop">Shop</Link>
           <Link to="/" className="flex items-center">
-            <select className="text-center bg-transparent flex"  name="" id="">
+            <select className="text-center bg-transparent flex" name="" id="">
               <option value="" className="">
                 For Kindergarten
               </option>

@@ -12,14 +12,14 @@ function Footer() {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
                         <img src={Logo} className="mr-5 h-6 sm:h-9" alt="logo" />
-                        <p className="max-w-xs mt-4 text-sm text-gray-600">
+                        <div className="max-w-xs mt-4 text-sm text-gray-600">
                             <div className='flex items-center gap-4 cursor-pointer'>
                                 <img src={Twitter} alt="" />
                                 <img src={instagram} alt="" />
                                 <img src={Facebook} alt="" />
                                 <img src={Linkidein} alt="" />
                             </div>
-                        </p>
+                        </div>
                         <div className="flex mt-8 space-x-6 text-gray-600">
                             <a className="hover:opacity-75" href="/" target="_blank" rel="noreferrer">
                                 <span className="sr-only">  </span>
