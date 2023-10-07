@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../../assets/Logo.png";
+import { ObjectContext } from '../../pages/shop/Context'
 
 function Navabar() {
   const navigate = useNavigate();
+  const { cart } = useContext(ObjectContext);
   return (
     <div className="container mx-auto w-[95%]">
       <div className="">
@@ -37,8 +39,8 @@ function Navabar() {
             <option value="/become">Become An Instructor</option>
             <option value="/our-mentors"> Our Mentors</option>
           </select>
-          <Link to="/" className="flex items-center">
-            Cart (0)
+          <Link to="/cart" className="flex items-center">
+            Cart<p color="#fff">({cart.length})</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"

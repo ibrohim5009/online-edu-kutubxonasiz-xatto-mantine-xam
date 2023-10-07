@@ -21,6 +21,9 @@ import mentor7 from "./assets/mentor7.png";
 import mentor8 from "./assets/mentor8.png";
 import mentor9 from "./assets/mentor9.png";
 import star from "./assets/Vector.png";
+import image14 from './assets/image14.svg'
+import image15 from './assets/image15.svg'
+import image16 from './assets/image16.svg'
 export const projectsData = [
   {
     id: "1",
@@ -87,6 +90,7 @@ export const projectsData = [
     category: "College",
   },
 ];
+
 
 // projects
 export const projectsNav = [
@@ -252,5 +256,25 @@ export const MentosProjectsNav = [
   },
   {
     name: "For Technology",
+  },
+];
+export const books = [
+  {
+    id: 1,
+    image: image14,
+    title: "The Three Musketeers, by Alexandre Dumas",
+    price: "$39.00",
+  },
+  {
+    id: 2,
+    image: image15,
+    title: "The Three Musketeers, by Alexandre Dumas",
+    price: "$39.00",
+  },
+  {
+    id: 3,
+    image: image16,
+    title: "The Three Musketeers, by Alexandre Dumas",
+    price: "$39.00",
   },
 ];

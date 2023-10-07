@@ -1,0 +1,267 @@
+.shop_all_books {
+  width: 131px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ff6652;
+  box-shadow: 0px 15px 50px 0px rgba(255, 102, 82, 0.2);
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.kindergarten {
+  width: 152px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  color: #0a033c;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.high_school {
+  width: 152px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  color: #0a033c;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.college {
+  width: 119px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  color: #0a033c;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.shop_serch_input {
+  width: 98%;
+  height: 70px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.input_and_button_around {
+  width: 640px;
+  height: 60px;
+  display: flex;
+}
+.input_around_button {
+  width: 560px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  outline: none;
+  padding: 0px 20px;
+}
+
+.input_in_button {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #9c4df4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 64.8%;
+  margin-top: 7px;
+}
+
+.button_item {
+  width: 270px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  color: #0a033c;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  text-align: start;
+}
+
+.onclick {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  padding: 20px;
+}
+
+.dropdown_menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0%;
+  top: 110%;
+  width: 270px;
+  display: none;
+  border-radius: 10px;
+}
+
+.open {
+  display: block;
+}
+
+.dropdown_menu li {
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.shopping_in_the_category {
+  height: 10vh;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.shopping_img_divs {
+  width: 273px;
+  height: 390px;
+  margin-top: 10px;
+}
+
+.img_oradigan_div {
+  width: 270px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map_item_name {
+  color: #0a033c;
+  font-family: monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.yonma_yon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.item_price_shop {
+  color: #ff6652;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.btn-12{
+  position: relative;
+  bottom: 10px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: #ff6652;
+/* background-image: linear-gradient(90deg, #00d4ff  0%, #216ca9 35%, #00d4ff 100%); */
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
