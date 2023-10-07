@@ -14,7 +14,7 @@ function Home() {
       <Action />
       <Info />
       <AboutStudent />
-      <OurMentiorsId/>
+      <OurMentiorsId />
     </div>
   );
 }
