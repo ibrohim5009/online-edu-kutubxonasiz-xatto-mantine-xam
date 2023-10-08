@@ -7,7 +7,11 @@ function Become() {
     <div>
       <div className="mx-auto container">
         <div className="relative">
-          <img src={headerImage} alt="" className="pl-12 mt-5" />
+          <img
+            src={headerImage}
+            alt=""
+            className="pl-12 mt-5 w-[97%] object-cover"
+          />
           <p className="absolute top-[100px] z-10 left-[250px] text-[#0A033C] text-5xl font-semibold leading-[50px]">
             Eduvi has the <br /> qualified mentor
           </p>

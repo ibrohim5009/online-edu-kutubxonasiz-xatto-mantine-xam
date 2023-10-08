@@ -10,10 +10,9 @@ import OurMentiorsId from "./components/pages/ourmentors/OurMentiorsId";
 import OurMentors from "./components/pages/ourmentors/OurMentors";
 import Pricing from "./components/pages/pricing/Pricing";
 import Shop from "./components/pages/shop/Shop";
-import PopularBooks from './components/pages/shop/PopularBooks';
+import PopularBooks from "./components/pages/shop/PopularBooks";
 import Cart from "./components/pages/Cart/Cart";
-
-
+// ыфдщб
 
 const App = () => {
   return (
@@ -24,15 +23,13 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/courses-details" element={<CoursesDetails />} />
-
           <Route path="/popularbooks" element={<PopularBooks />} />
-
           <Route path="/shop" element={<Shop />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/become" element={<Become />} />
           <Route path="/our-mentors/" element={<OurMentors />} />
-          <Route path="/mentor/:id" element={<OurMentiorsId />
-          <Route path="/cart" element={<Cart />} /
+          <Route path="/mentor/:id" element={<OurMentiorsId />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

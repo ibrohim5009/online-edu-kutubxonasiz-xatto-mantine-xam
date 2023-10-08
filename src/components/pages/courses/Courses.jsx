@@ -4,8 +4,8 @@ import React, { useEffect, useState } from "react";
 import { projectsData, projectsNav } from "./CoursesData";
 
 import Coursess from "./Coursess";
-import OurMentorsProject from "../ourmentors/OurMentorProjec";
 import Other from "./Other";
+import CouraNav from "./CouraNav";
 
 function Courses() {
   const [item, setItem] = useState({ name: "all" });
@@ -48,6 +48,7 @@ function Courses() {
 
   return (
     <>
+    <CouraNav/>
       <div className="bg-[#F7F5FA]">
         <nav className="mb-12 mx-auto container">
           <ul className="flex flex-col md:flex-row justify-evenly items-center ">
