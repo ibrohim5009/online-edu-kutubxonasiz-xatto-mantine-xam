@@ -12,6 +12,7 @@ import Pricing from "./components/pages/pricing/Pricing";
 import Shop from "./components/pages/shop/Shop";
 import PopularBooks from './components/pages/shop/PopularBooks';
 import Cart from "./components/pages/Cart/Cart";
+// ыфдщб
 
 
 
