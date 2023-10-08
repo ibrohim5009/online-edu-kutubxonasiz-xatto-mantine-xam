@@ -63,7 +63,7 @@ function Other() {
       </div>
 
       <div className="mt-12">
-        <div className="">
+        <div className="l">
           <div className="grid grid-cols-2  justify-between gap-8">
             {MakbookliBrat.map((item) => (
               <div
